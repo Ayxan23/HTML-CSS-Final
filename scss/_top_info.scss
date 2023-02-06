@@ -1,0 +1,50 @@
+.top_info i {
+  color: #556bb3;
+  padding: 0px 10px;
+}
+.top_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 80px;
+  background-color: #06001d;
+  color: rgb(118, 112, 138);
+  font-size: 13px;
+  &_right {
+    .fa-brands:hover {
+      color: #3d4a85;
+      cursor: pointer;
+    }
+  }
+  &_center{
+    display: none;
+  }
+  &_center i {
+    color: #878a9d;
+    font-size: 20px;
+  }
+
+  &_left {
+    &_span {
+      margin-right: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .top_info_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .top_info_right{
+    display: none;
+  }
+  .top_info_left{
+    display: none;
+  }
+  .top_info{
+    justify-content: center;
+  }
+}

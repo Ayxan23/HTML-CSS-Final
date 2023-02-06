@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+@import "./scss/header";
+@import "./scss/top_info";
+@import "./scss/banner";
+@import "./scss/banner_bottom";
+@import "./scss/options";
+@import "./scss/services";
+@import "./scss/doctors";
+@import "./scss/appoint";
+@import "./scss/photo_text";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+
+.main {
+  background-color: #f8fafc;
+  padding-bottom: 80px;
+}
+
+::selection{
+  color: white;
+  background-color: #383e48;
+}

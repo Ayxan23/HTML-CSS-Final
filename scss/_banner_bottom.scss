@@ -1,0 +1,60 @@
+.banner_boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: -60px;
+
+  &_box {
+    flex: 1;
+    padding: 40px 30px;
+    background-color: white;
+    min-width: 300px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    &_name {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 20px;
+      &_text {
+        color: #0a0a0a;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+    &_name i {
+      color: #6a4ef6;
+      font-size: 30px;
+    }
+
+    &_p {
+      line-height: 1.7;
+      font-size: 15px;
+      font-weight: 300;
+      color: #878a9d;
+      margin-bottom: 30px;
+    }
+
+    &_a {
+      font-weight: 500;
+      color: #383e48;
+      text-decoration: none;
+    }
+
+    &_a:hover {
+      color: #1f2228;
+    }
+  }
+}
+
+.view_all {
+  padding: 60px 0px;
+  &_p {
+    text-align: center;
+    color: #878a9d;
+    &_a {
+      font-weight: 600;
+      text-decoration: none;
+      color: #383e48;
+    }
+  }
+}

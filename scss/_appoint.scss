@@ -1,0 +1,123 @@
+.appoint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 60px 20px;
+
+  &_h2 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    color: #143e78;
+    margin-bottom: 15px;
+  }
+
+  &_p {
+    text-align: center;
+    width: 100%;
+    max-width: 840px;
+    color: #878a9d;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+
+  &_form {
+    width: 100%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    &_box {
+      display: flex;
+      flex-direction: column;
+      &_label {
+        font-size: 12px;
+        color: #878a9d;
+        margin-bottom: 10px;
+        display: none;
+      }
+      &_labelone {
+        font-size: 16px;
+        color: #878a9d;
+      }
+    }
+    &_box input {
+      font-size: 16px;
+      color: #878a9d;
+      border: 1px solid #f1f1f1;
+      outline: none;
+      padding: 12px 23px;
+      border-radius: 4px;
+    }
+    &_box input:focus {
+      border: 1px solid #ccc;
+      outline: none;
+    }
+
+    &_box input::placeholder {
+      font-size: 16px;
+      color: #878a9d;
+    }
+    &_boxone {
+      flex-direction: row;
+      gap: 8px;
+      align-items: center;
+      &_checkbox {
+        accent-color: #545fab;
+        width: 18px;
+        height: 18px;
+      }
+    }
+    &_boxtwo {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    &_button {
+      color: white;
+      font-size: 16px;
+      padding: 14px 40px;
+      background-color: #545fab;
+      border: none;
+      border-radius: 5px;
+    }
+    &_button:hover {
+      cursor: pointer;
+      background-color: #434e8a;
+    }
+  }
+}
+
+.check_box {
+  display: block;
+}
+
+.input_test{
+    position: relative;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: text;
+}
+
+@media screen and (max-width: 1000px) {
+  .appoint_form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .appoint_form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .appoint_form_box_label {
+    display: block;
+  }
+}

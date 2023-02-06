@@ -1,0 +1,87 @@
+.header {
+  display: flex;
+  background-color: white;
+  padding: 20px 80px;
+  justify-content: space-between;
+  position: sticky;
+  z-index: 2;
+  top: 0px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  &_img {
+    width: 124px;
+    height: 36px;
+    background: url("/image/loogo.png");
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &_right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    &_navbar {
+      &_ul {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        &_li {
+          color: #565656;
+          font-size: 16px;
+        }
+        &_li:hover {
+          color: #06001d;
+          cursor: pointer;
+        }
+      }
+    }
+    .fa-magnifying-glass {
+      color: #06001d;
+    }
+    .fa-magnifying-glass:hover {
+      color: #565656;
+      cursor: pointer;
+    }
+  }
+
+  &_hidden {
+    display: none;
+    align-items: center;
+    gap: 15px;
+    &_menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      color: #06001d;
+      width: 40px;
+      height: 40px;
+      padding: 0px 6px;
+      border: 1px solid #06001d;
+      border-radius: 4px;
+    }
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .header{
+    padding: 20px 40px;
+  }
+  .header_hidden{
+    display: flex;
+  }
+  .header_right{
+    display: none;
+  }
+  .fa-magnifying-glass:hover {
+    color: #565656;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header{
+    padding: 20px 20px;
+  }
+}
+

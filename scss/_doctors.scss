@@ -1,0 +1,116 @@
+.doctors {
+  &_h2 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    color: #143e78;
+    margin-bottom: 20px;
+  }
+
+  &_boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 35px 0;
+    &_box {
+      cursor: pointer;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      flex: 1;
+      &_img {
+        overflow:hidden;
+        display: flex;
+        width: 100%;
+        height: auto;
+        &_photo {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      &_text {
+        background-color: white;
+        padding: 24px 15px;
+        text-align: center;
+        &_h3 {
+          font-size: 20px;
+          font-weight: 500;
+          color: #143e78;
+        }
+        &_p {
+          color: #878a9d;
+          font-weight: 400;
+          margin: 4px 0;
+        }
+      }
+    }
+  }
+
+  &_scroll {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    &_point {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #ececec;
+    }
+    &_point:hover{
+        cursor: pointer;
+        background-color: #9e9ea1;
+    }
+  }
+}
+
+.doctors_boxes_box:hover img{
+    transform: scale(1.1);
+    transition: all 0.4s;
+}
+
+.doctors_boxes_box:hover h3,p{
+    opacity: 0.85;
+    transition: all 0.4s;
+}
+
+.point_one {
+  background-color: #9e9ea1;
+}
+.point_three {
+  display: none;
+}
+.point_four {
+  display: none;
+}
+.point_five {
+  display: none;
+}
+
+@media screen and (max-width: 950px) {
+  .box_three {
+    display: none;
+  }
+  .box_four {
+    display: none;
+  }
+  .point_three {
+    display: block;
+  }
+  .doctors_scroll {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .box_two {
+    display: none;
+  }
+  .point_four {
+    display: block;
+  }
+  .point_five {
+    display: block;
+  }
+}
