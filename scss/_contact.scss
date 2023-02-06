@@ -1,0 +1,33 @@
+.contact {
+  display: flex;
+  margin: 60px 0;
+  gap: 30px;
+  &_box {
+    flex: 1;
+    &_h3 {
+      font-size: 22px;
+      font-weight: 600;
+      color: #143e78;
+      margin-bottom: 15px;
+    }
+    &_p {
+      color: #878a9d;
+      line-height: 1.8;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .contact_box_h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .contact_box_p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .contact {
+    flex-direction: column;
+  }
+}

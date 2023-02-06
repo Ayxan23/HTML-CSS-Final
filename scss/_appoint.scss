@@ -95,16 +95,16 @@
   display: block;
 }
 
-.input_test{
-    position: relative;
+.input_test {
+  position: relative;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    cursor: text;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: text;
 }
 
 @media screen and (max-width: 1000px) {

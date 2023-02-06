@@ -68,6 +68,9 @@
   .header_hidden {
     display: flex;
   }
+  .header_hidden:hover {
+    cursor: pointer;
+  }
   .header_right {
     display: none;
   }
@@ -116,6 +119,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .top_info_center:hover {
+    cursor: pointer;
   }
   .top_info_right {
     display: none;
@@ -682,7 +688,8 @@
   transition: all 0.4s;
 }
 
-.doctors_boxes_box:hover h3, p {
+.doctors_boxes_box:hover h3,
+p {
   opacity: 0.85;
   transition: all 0.4s;
 }
@@ -935,6 +942,113 @@ input[type=date]::-webkit-calendar-picker-indicator {
     height: 250px;
   }
 }
+.contact {
+  display: flex;
+  margin: 60px 0;
+  gap: 30px;
+}
+.contact_box {
+  flex: 1;
+}
+.contact_box_h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #143e78;
+  margin-bottom: 15px;
+}
+.contact_box_p {
+  color: #878a9d;
+  line-height: 1.8;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact_box_h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .contact_box_p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .contact {
+    flex-direction: column;
+  }
+}
+.footer_info {
+  display: flex;
+  padding: 45px 0;
+  gap: 30px;
+}
+.footer_info_box {
+  flex: 1;
+}
+.footer_info_box_h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #383e48;
+  margin-bottom: 15px;
+}
+.footer_info_box_p {
+  color: #9294a3;
+  font-size: 15px;
+  line-height: 1.8;
+}
+.footer_info_box_ul {
+  list-style: none;
+}
+.footer_info_box_ul_li {
+  color: #9294a3;
+  font-size: 15px;
+  line-height: 2.3;
+}
+.footer_info_box_ul_li:hover {
+  cursor: pointer;
+}
+.footer_info_box_contact {
+  color: #9294a3;
+  font-size: 15px;
+  line-height: 2.3;
+}
+.footer_info_box_contactone {
+  margin-top: 18px;
+}
+.footer_info_box_contact i {
+  color: #556bb3;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.footer_info_boxone {
+  flex: 2;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer_info_boxone {
+    flex: 1.4;
+  }
+}
+@media screen and (max-width: 800px) {
+  .footer_info {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .footer_info_box_h3 {
+    margin-bottom: 5px;
+  }
+  .footer_info_boxone {
+    flex: 1;
+  }
+}
+.footer_copyright {
+  background-color: #f2f2f2;
+  padding: 20px 20px;
+  text-align: center;
+}
+.footer_copyright_p {
+  font-size: 14px;
+  color: #888996;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -951,7 +1065,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .main {
   background-color: #f8fafc;
-  padding-bottom: 80px;
 }
 
 ::-moz-selection {

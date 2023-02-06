@@ -17,7 +17,7 @@
       cursor: pointer;
     }
   }
-  &_center{
+  &_center {
     display: none;
   }
   &_center i {
@@ -33,18 +33,21 @@
 }
 
 @media screen and (max-width: 1010px) {
-  .top_info_center{
+  .top_info_center {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .top_info_right{
+  .top_info_center:hover {
+    cursor: pointer;
+  }
+  .top_info_right {
     display: none;
   }
-  .top_info_left{
+  .top_info_left {
     display: none;
   }
-  .top_info{
+  .top_info {
     justify-content: center;
   }
 }

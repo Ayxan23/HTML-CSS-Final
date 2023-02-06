@@ -9,6 +9,8 @@
 @import "./scss/doctors";
 @import "./scss/appoint";
 @import "./scss/photo_text";
+@import "./scss/contact";
+@import "./scss/footer_info";
 
 * {
   margin: 0;
@@ -26,10 +28,9 @@
 
 .main {
   background-color: #f8fafc;
-  padding-bottom: 80px;
 }
 
-::selection{
+::selection {
   color: white;
   background-color: #383e48;
 }
